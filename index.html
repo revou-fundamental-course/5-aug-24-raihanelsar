@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator BMI</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+    <div class="container">  
+        <h1>Kalkulator BMI</h1>
+        <label for="g-input">Jenis Kelamin:</label>
+        <select id="g-input" required>
+            <option value="">Pilih Jenis Kelamin</option>
+            <option value="Laki-Laki">Laki-Laki</option>
+            <option value="Wanita">Wanita</option>
+        </select>
+        <label for="a-input">Umur:</label>
+        <input id="a-input" type="number" placeholder="Masukkan Umur Anda" required>
+        
+        <label for="h-input">Tinggi (cm):</label>
+        <input id="h-input" type="number" placeholder="Masukkan Tinggi Anda" required>
+        
+        <label for="w-input">Berat (kg):</label>
+        <input id="w-input" type="number" placeholder="Masukkan Berat Anda" required>  
+        
+        <button type="submit" onclick="Calculate()">Hitung BMI</button>
+            
+        <div class="bmi-value result">
+            <h4>BMI Anda:</h4>
+            <div id="bmi-output"></div>
+        </div>
+        <div class="status result">
+            <h4>Status:</h4>
+            <div id="bmi-status"></div>
+        </div>   
+    </div>
+</body>
+</html>
